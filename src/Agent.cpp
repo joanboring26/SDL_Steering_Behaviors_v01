@@ -15,6 +15,7 @@ Agent::Agent() : sprite_texture(0),
 	             sprite_h(0),
 	             draw_sprite(false)
 {
+
 }
 
 Agent::~Agent()
@@ -75,6 +76,7 @@ void Agent::update(float dtime, SDL_Event *event)
 	case SDL_KEYDOWN:
 		if (event->key.keysym.scancode == SDL_SCANCODE_SPACE)
 			draw_sprite = !draw_sprite;
+			
 		break;
 	default:
 		break;
